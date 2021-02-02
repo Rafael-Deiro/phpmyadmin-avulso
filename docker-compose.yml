@@ -14,7 +14,7 @@ services:
       MYSQL_ROOT_PASSWORD: senhasuperdificil  # Senha do superuser(root) do MySQL
       PMA_HOST: 127.0.0.1                     # IP do servidor do banco de dados
       PMA_USER: root
-      PMA_PASSWORD: senhasuperdificil
+      PMA_PASSWORD: senhasuperdificil         # Senha do superuser(root) do MySQL
       UPLOAD_LIMIT: 256M
 
 volumes:
