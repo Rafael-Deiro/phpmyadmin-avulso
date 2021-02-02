@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  # Container phpMyAdmin
+  phpmyadmin:
+    container_name: planetaexo_phpmyadmin
+    image: phpmyadmin:5
+    restart: always
+    ports:
+        - 8080:80
+    volumes:
+      - phpmyadmin-sessions:/sessions
+    environment:
+      MYSQL_ROOT_PASSWORD: senhasuperdificil  # Senha do superuser(root) do MySQL
+      PMA_HOST: 127.0.0.1                     # IP do servidor do banco de dados
+      PMA_USER: root
+      PMA_PASSWORD: senhasuperdificil
+      UPLOAD_LIMIT: 256M
+
+volumes:
+  phpmyadmin-sessions:
+    driver: local
