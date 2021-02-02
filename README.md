@@ -2,7 +2,7 @@
 
 ## Instalação do Docker e Docker Compose
 ### Docker
-[Documentação de Instalação](https://docs.docker.com/engine/install/ubuntu/)
+[Documentação de Instalação](https://docs.docker.com/engine/install/ubuntu/)<br>
 [Documentação de Pós Instalação (executar sem sudo)](https://docs.docker.com/engine/install/linux-postinstall/)
 - Remover versões antigas com `sudo apt-get remove docker docker-engine docker.io containerd runc`
 - Atualizar o APT
